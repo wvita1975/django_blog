@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <div>
     {{ post.title }}
     {{ post.body }}
-    
+    </div>
+    <br>
+    <a href="{% url 'post_update' post.pk %}">Update post</a>
 {% endblock content %}
